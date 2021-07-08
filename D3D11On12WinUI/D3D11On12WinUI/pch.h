@@ -28,7 +28,8 @@
 // conflict with Storyboard::GetCurrentTime
 #undef GetCurrentTime
 
-#include <winrt/Microsoft.System.h>
+#include <winrt/Microsoft.UI.Dispatching.h>
+#include <microsoft.ui.dispatching.co_await.h>
 #include <winrt/Windows.ApplicationModel.Core.h>
 #include <winrt/Windows.Foundation.h>
 #include <winrt/Windows.Foundation.Collections.h>
