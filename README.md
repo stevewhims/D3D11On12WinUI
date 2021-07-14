@@ -7,3 +7,9 @@ Writing an app/engine from scratch in [Direct3D 12](https://docs.microsoft.com/w
 But [Direct3D 11-on-12](https://docs.microsoft.com/windows/win32/direct3d12/direct3d-11-on-12) makes porting apps/engines to Direct3D 12 simpler, because entire Direct3D 11-based components, such as a UI system, can remain virtually untouched.
 
 ![screenshot of the D3D11On12WinUI sample, showing XAML button and rotating cube](d3d11on12winui.png)
+
+## Interop with WinUI XAML
+
+Interoperation between a swap chain and a XAML UI is documented in [SwapChainPanel and gaming](https://docs.microsoft.com/windows/uwp/gaming/directx-and-xaml-interop#swapchainpanel-and-gaming).
+
+The main point to note is that, for WinUI XAML, **ISwapChainPanelNative** is defined in `microsoft.ui.xaml.media.dxinterop.h`.
