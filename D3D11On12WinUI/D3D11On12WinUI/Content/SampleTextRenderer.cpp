@@ -52,7 +52,7 @@ namespace winrt::D3D11On12WinUI
         HRESULT hr{ pContext->EndDraw() };
         if (hr != D2DERR_RECREATE_TARGET && hr != S_OK)
         {
-            winrt::check_hresult(hr);
+            if (hr != E_NOINTERFACE) winrt::check_hresult(hr);
         }
 
         pContext->RestoreDrawingState(m_pD2D1StateBlock.get());
